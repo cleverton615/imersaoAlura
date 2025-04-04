@@ -1,6 +1,6 @@
 function jogar() {
-  rodada = 1;
-    while (rodada <= 3) {
+    ganhou = 0 //Se for 1, perdeu. Se for 0, ganhou.
+    for (rodada = 1; rodada <= 3; rodada++) {
     console.log("Rodada: " + rodada);
     escolhaJogador = prompt("Nível " + rodada + ", vidro (1, 2 ou 3)?");
     pisoQuebrado = Math.floor(Math.random() * 3) + 1;
@@ -9,14 +9,13 @@ function jogar() {
       // Escolheu o vidro que estava quebrado
       alert("Vidro quebrou! Acabou o jogo pra você.");
       rodada = 5;
+      ganhou = 1
     } else {
       alert("Passou! Piso quebrado estava na ponte: " + pisoQuebrado);
     }
-
-    rodada = rodada + 1;
   }
 
-  if (rodada == 4) {
+  if (ganhou == 0) {
     alert("Você venceu! Parabéns!");
   }
 
