@@ -19,11 +19,12 @@ body {
   
   /* Container with the background image */
   .container {
-    background: url('https://i.postimg.cc/TY28jTqJ/bg4-ia.jpg') no-repeat center center/cover;
+    background: url('https://i.postimg.cc/N0z8L6Q0/pexels-pixabay-259165.jpg') no-repeat center center/cover;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
   
   /* Content div for text and button */
@@ -32,6 +33,8 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px 40px;
     border-radius: 8px;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
   
   .content h2 {
@@ -55,6 +58,7 @@ body {
   
   /* Footer Styles */
   footer {
+
     text-align: center;
     padding: 10px;
   }
